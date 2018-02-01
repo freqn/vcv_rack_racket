@@ -5,6 +5,7 @@
 
 ## Instructions
 
-1) Download/install third party modules into `Rack/plugins directory`
+1) Download/install third party modules into `Rack/plugins` directory
 2) Open VCV Rack application
 3) Open the .vcv file from this directory
+ 
