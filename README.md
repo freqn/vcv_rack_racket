@@ -1,3 +1,3 @@
 # VCV Rack Racket
 
-For sharing of song (.vcv) files, libraries and eventually custom modules.
+For sharing of racks (.vcv) files, libraries and eventually custom modules.
