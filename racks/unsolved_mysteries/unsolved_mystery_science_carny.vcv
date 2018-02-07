@@ -1,0 +1,195 @@
+{
+  "version": "0.5.1",
+  "modules": [
+    {
+      "plugin": "Core",
+      "model": "AudioInterface",
+      "pos": [
+        1410.0,
+        380.0
+      ],
+      "params": [],
+      "data": {
+        "driver": 5,
+        "device": 1,
+        "sampleRate": 44100.0,
+        "blockSize": 256
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCA",
+      "pos": [
+        120.0,
+        0.0
+      ],
+      "params": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "SEQ3",
+      "pos": [
+        1110.0,
+        0.0
+      ],
+      "params": [
+        1.9639990329742432,
+        0.0,
+        0.0,
+        8.0,
+        0.64499962329864502,
+        0.0,
+        0.0,
+        0.0,
+        0.43499982357025146,
+        5.2049946784973145,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0199998617172241,
+        0.0,
+        0.0,
+        0.0,
+        0.61499965190887451,
+        0.0,
+        0.0,
+        0.0,
+        0.58500063419342041,
+        0.0,
+        0.0,
+        0.0,
+        0.43500006198883057,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "data": {
+        "running": true,
+        "gates": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "gateMode": 1
+      }
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "ADSR",
+      "pos": [
+        210.0,
+        0.0
+      ],
+      "params": [
+        0.13049983978271484,
+        0.38700008392333984,
+        0.17699991166591644,
+        0.63749933242797852
+      ]
+    },
+    {
+      "plugin": "Fundamental",
+      "model": "VCMixer",
+      "pos": [
+        1440.0,
+        0.0
+      ],
+      "params": [
+        0.036000002175569534,
+        1.0,
+        0.086407661437988281,
+        0.71994537115097046
+      ]
+    },
+    {
+      "plugin": "Autodafe",
+      "model": "Reverb",
+      "pos": [
+        330.0,
+        0.0
+      ],
+      "params": [
+        10.0,
+        0.15450015664100647
+      ]
+    },
+    {
+      "plugin": "Befaco",
+      "model": "EvenVCO",
+      "pos": [
+        0.0,
+        0.0
+      ],
+      "params": [
+        1.0,
+        0.0,
+        0.51899999380111694
+      ]
+    }
+  ],
+  "wires": [
+    {
+      "outputModuleId": 4,
+      "outputId": 0,
+      "inputModuleId": 0,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 2,
+      "outputId": 0,
+      "inputModuleId": 3,
+      "inputId": 4
+    },
+    {
+      "outputModuleId": 3,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 4
+    },
+    {
+      "outputModuleId": 4,
+      "outputId": 0,
+      "inputModuleId": 0,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 5,
+      "outputId": 0,
+      "inputModuleId": 4,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 2,
+      "outputId": 1,
+      "inputModuleId": 6,
+      "inputId": 1
+    },
+    {
+      "outputModuleId": 1,
+      "outputId": 1,
+      "inputModuleId": 5,
+      "inputId": 0
+    },
+    {
+      "outputModuleId": 6,
+      "outputId": 0,
+      "inputModuleId": 1,
+      "inputId": 5
+    }
+  ]
+}
